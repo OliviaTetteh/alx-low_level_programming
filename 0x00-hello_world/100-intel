@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <unistd.h>
+/**
+ *main- script that generates assembly code
+ *
+ *Return: 1 Always
+ */
+int main void
+{
+write (2,
+
