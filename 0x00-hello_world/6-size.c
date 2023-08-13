@@ -2,9 +2,9 @@
 /**
  *main - program that the size of types of computers
  *
- *Return: always 0 (success)
+ *Return: always 0(success)
  */
-int main (void)
+int main(void)
 {
 printf("size of char: %lu byte(s)\n", size of(char));
 printf("size of int: %lu byte(s)\n", size of(int));
