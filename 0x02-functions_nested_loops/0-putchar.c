@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-printf("_putcher(\n");
+printf("_putcher\n");
 return (0);
 }
