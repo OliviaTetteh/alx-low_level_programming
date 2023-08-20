@@ -3,7 +3,7 @@
 /**
  * _isupper - This code checks if a letter is upper
  * @x: The number to be checked
- * return: 1 for upper letter or 0 for any else
+ * Return: 1 for upper letter or 0 for any else
  */
 
 int _isupper(int x)
