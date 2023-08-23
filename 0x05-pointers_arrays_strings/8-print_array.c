@@ -2,146 +2,22 @@
 #include <stdio.h>
 
 /**
- * main - It will check the code
- * Return: always 0
+ * print_array - a function that prints n elements of an array
+ * @a: is the array name
+ * @b: is the number of elements of the array to be printed
+ * Return: a and b inputs
  */
-
-int main(void)
+void print_array(int *a, int b)
 {
-	int n;
+	int i;
 
-		n = 402;
-		printf("n=%dn", n);
-		reset_to_98(&n);
-		printf("n=%d\n", n);
-		return (0);
+	for (i = 0; i < (b - 1); i++)
+	{
+		printf("%d, ", a[i]);
+	}
+		if (i == (b - 1))
+		{
+			printf("%d", a[b - 1]);
+		}
+			printf("\n");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
