@@ -14,39 +14,39 @@ size_t print_listint_safe(const listint_t *head);
  */
 size_t looped_listint_len(const listint_t *head)
 {
-	const listint_t *rice, *beans;
+	const listint_t *tortoise, *hare;
 	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 
-	rice = head->next;
-	beans = (head->next)->next;
+	tortoise = head->next;
+	hare = (head->next)->next;
 
-	while (beans)
+	while (hare)
 	{
-		if (rice == beans)
+		if (tortoise == hare)
 		{
-			rice = head;
-			while (rice != beans)
+			tortoise = head;
+			while (tortoise != hare)
 			{
 				nodes++;
-				rice = rice->next;
-				beans = beans->next;
+				tortoise = tortoise->next;
+				hare = hare->next;
 			}
 
-			rice = rice->next;
-			while (rice != beans)
+			tortoise = tortoise->next;
+			while (tortoise != hare)
 			{
 				nodes++;
-				rice = rice->next;
+				tortoise = tortoise->next;
 			}
 
 			return (nodes);
 		}
 
-		rice = rice->next;
-		beans = (beans->next)->next;
+		tortoise = tortoise->next;
+		hare = (hare->next)->next;
 	}
 
 	return (0);
@@ -54,7 +54,7 @@ size_t looped_listint_len(const listint_t *head)
 
 /**
  * print_listint_safe - Prints a listint_t linked list
- * @head: The address of the head of the listint_t list.
+ * @head: An address to the head of the listint_t list.
  *
  * Return: The number of nodes in the list.
  */
