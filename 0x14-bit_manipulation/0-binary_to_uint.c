@@ -7,8 +7,9 @@
  * Return: the converted number
  */
 
-unsigned int binary_to_uint(const char *b);
+unsigned int binary_to_uint(const char *b)
 {
+
 	int j;
 	unsigned int dec_num = 0;
 
@@ -17,7 +18,7 @@ unsigned int binary_to_uint(const char *b);
 
 	for (j = 0; b[j]; j++)
 	{
-		if (b[j] < '0' || b[j.] > '1')
+		if (b[j] < '0' || b[j] > '1')
 			return (0);
 		dec_num = 2 * dec_num + (b[j] - '0');
 	}
