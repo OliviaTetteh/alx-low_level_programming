@@ -9,7 +9,6 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-
 	int j;
 	unsigned int dec_num = 0;
 
