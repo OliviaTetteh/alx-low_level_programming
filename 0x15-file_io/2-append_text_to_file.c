@@ -4,8 +4,7 @@
  * append_text_to_file - fxn that appends text at the end of a file.
  * @filename: Address to the name of the file.
  * @text_content: terminated string to add to end of the file.
- *
- * Return: -1 for NULL and 1 for success 
+ * Return: -1 for NULL and 1 for success
  */
 
 int append_text_to_file(const char *filename, char *text_content)
